@@ -5,9 +5,45 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+if [[ -s "${ZDOTDIR:-$HOME}/.zshenv" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zshenv"
+fi
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # Customize to your needs...
+
+alias mkcd='mkdcd'
+
+# alias n='nvim'
+alias nv='nvim'
+alias vim='nvim'
+export EDITOR='vim'
+
+alias t='tmux new -As0'
+alias tm='tmux'
+
+alias sd='ssh dev'
+
+alias lg='lazygit'
+alias ldk='lazydocker'
+
+alias gb='git branch'
+alias gcl='git clone --recurse-submodules'
+alias gst='git status'
+alias gS='git submodule'
+alias gSI='git submodule update --init --recursive'
+
+alias gr='git rebase'
+alias gra='git rebase --abort'
+alias grc='git rebase --continue'
+alias gri='git rebase --interactive'
+alias grs='git rebase --skip'
+
+alias vz="vim ~/.zshrc && source ~/.zshrc"
+alias vzp="vim ${ZDOTDIR}/.zpreztorc && source ~/.zshrc"
+alias vzz="vim ${ZDOTDIR}/.zshrc && source ~/.zshrc"
+
