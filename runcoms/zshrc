@@ -16,8 +16,6 @@ fi
 
 # Customize to your needs...
 
-alias mkcd='mkdcd'
-
 # alias n='nvim'
 alias nv='nvim'
 alias vim='nvim'
@@ -43,7 +41,7 @@ alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
 alias grs='git rebase --skip'
 
-alias vz="vim ~/.zshrc && source ~/.zshrc"
-alias vzp="vim ${ZDOTDIR}/.zpreztorc && source ~/.zshrc"
-alias vzz="vim ${ZDOTDIR}/.zshrc && source ~/.zshrc"
+alias vz="vim ${HOME}/.zshrc && source ${HOME}/.zshrc"
+alias vzp="vim ${ZDOTDIR}/.zpreztorc && source ${ZDOTDIR}/.zpreztorc"
+alias vzz="vim ${ZDOTDIR}/.zshrc && source ${ZDOTDIR}/.zshrc"
 

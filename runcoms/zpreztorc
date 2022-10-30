@@ -43,7 +43,8 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'autosuggestions' \
-  'prompt'
+  'prompt' \
+  'custom'
 
 #
 # Autosuggestions
@@ -250,3 +251,4 @@ zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 # zstyle ':prezto:module:utility' safe-ops 'yes'
 zstyle -s ':prezto:module:utility:download' helper 'wget'
 zstyle ':prezto:module:utility' correct 'no'
+
