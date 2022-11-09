@@ -16,6 +16,11 @@ fi
 
 # Customize to your needs...
 
+path=(
+  $HOME/{,s}bin(N)
+  $path
+)
+
 # alias n='nvim'
 alias nv='nvim'
 alias vim='nvim'
@@ -44,4 +49,6 @@ alias grs='git rebase --skip'
 alias vz="vim ${HOME}/.zshrc && source ${HOME}/.zshrc"
 alias vzp="vim ${ZDOTDIR}/.zpreztorc && source ${ZDOTDIR}/.zpreztorc"
 alias vzz="vim ${ZDOTDIR}/.zshrc && source ${ZDOTDIR}/.zshrc"
+
+alias tk="asynctask.py"
 
