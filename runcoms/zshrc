@@ -5,6 +5,14 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:=$HOME/.config}"
+export ZDOTDIR="${ZDOTDIR:=$XDG_CONFIG_HOME/zsh}"
+export DOTFILES_DIR=${HOME}/dotfiles
+
+if [[ -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprofile"
+fi
+
 if [[ -s "${ZDOTDIR:-$HOME}/.zshenv" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshenv"
 fi
@@ -17,6 +25,8 @@ fi
 # Customize to your needs...
 
 path=(
+  $DOTFILES_DIR/bin
+  $HOME/.local/{,s}bin(N)
   $HOME/{,s}bin(N)
   $path
 )
